@@ -384,7 +384,7 @@ __int64 __fastcall sub_14003411C(VM_CONTEXT *v0) {
     
   // ... 각종 VM 명령어 실행 (오퍼랜드 fetch, 실행 등)  
     
-  // bartecode fetch  
+  // bytecode fetch?  
   unsigned int opcode = *(unsigned __int16*)v0->vm_bytecodePtr;  
   // next handler = handlerTable[opcode * 8]  
   __int64 nextHandler = *( (__int64*)(v0->vm_handlerTable + (opcode & 0xFFFF) * 8) );  
